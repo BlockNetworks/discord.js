@@ -994,7 +994,7 @@ declare module 'discord.js' {
     public createReactionCollector(filter: CollectorFilter, options?: ReactionCollectorOptions): ReactionCollector;
     public delete(): Promise<Message>;
     public edit(
-      content: APIMessageContentResolvable | MessageEditOptions | MessageEmbed | APIMessage,
+      content: APIMessageContentResolvable | MessageOptions | MessageEmbed | APIMessage,
     ): Promise<Message>;
     public edit(content: StringResolvable, options: MessageEditOptions | MessageEmbed): Promise<Message>;
     public equals(message: Message, rawData: object): boolean;
